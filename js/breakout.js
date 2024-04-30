@@ -171,6 +171,19 @@ function moveBall() {
     ) {
         ball.dy = -1 * ball.dy
     }
+
+    //Brick collision
+    bricks.forEach(column => {
+        column.forEach(brick => {
+            if (brick.visible) {
+                if (
+                    ball.y - ball.size < brick.y + brick.h //bottom
+                )
+                ball.dy = -1 * ball.dy
+                brick.visible = false
+            }
+        })
+    })
 }
 
 
