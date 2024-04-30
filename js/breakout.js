@@ -180,14 +180,17 @@ function moveBall() {
                     ball.x - ball.size > brick.x && //Left brick side
                     ball.x + ball.size < brick.x + brick.w && //right
                     ball.y - ball.size < brick.y + brick.h //bottom
-                )
+                ) {
                 ball.dy = -1 * ball.dy
                 brick.visible = false
                 increaseScore()
+              }
             }
         })
     })
-    
+
+    //lose if hit bottom wall
+    if (ball.y + ball.size > canvas)
 }
 
 
