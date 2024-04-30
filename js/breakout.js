@@ -157,6 +157,20 @@ function moveBall() {
     if (ball.y + ball.size > canvas.height) {
         ball.dy = -1 * ball.dy
     }
+
+    //wall collision (left)
+    if (ball.x + ball.size < 0) {
+        ball.dx = -1 * ball.dx
+    }
+
+    //paddle collision
+    if (
+        ball.x-ball.size > paddle.x &&
+        ball.x +ball.size < paddle.x +paddle.w &&
+        ball.y + ball.size < paddle.y
+    ) {
+        ball.dy = -1 * ball.dy
+    }
 }
 
 
