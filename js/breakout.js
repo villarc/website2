@@ -133,7 +133,9 @@ function keyUp(e) {
   }
 }
 
-//Keyboard event handlersb n
+
+
+//Keyboard event handlers
 document.addEventListener('keydown', keyDown)
 document.addEventListener('keyup', keyUp)
 
