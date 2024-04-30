@@ -190,6 +190,18 @@ function moveBall() {
 }
 
 
+//increase score
+function increaseScore() {
+    score++ //score = score + 1
+
+    if (score == brickRowCount * brickColumnCount) {
+        score = 0
+        showAllBricks()
+    }
+}
+
+
+
 //Update canvas drawing and animation
 function update() {
     moveBall()
