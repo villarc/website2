@@ -200,7 +200,13 @@ function increaseScore() {
     }
 }
 
-
+function showAllBricks() {
+    brick.forEach(column => {
+        column.forEach(brick => {
+            brick.visible = true
+        })
+    })
+}
 
 //Update canvas drawing and animation
 function update() {
