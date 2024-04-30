@@ -100,7 +100,7 @@ function draw() {
     drawBricks()
 }
 
-//Move paddle on camvas
+//Move paddle on canvas
 function movePaddle() {
     paddle.x = paddle.x + paddle.dx
 
@@ -126,7 +126,7 @@ function keyDown(e) {
 
 //Keyup Event
 function keyUp(e) {
-  if (e.key == 'ArrowRight' || 
+  if (e.key == 'ArrowRight' ||
       e.key == 'Right' ||
       e.key == 'ArrowLeft') {
     paddle.dx = 0
