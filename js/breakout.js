@@ -124,6 +124,7 @@ function keyDown(e) {
     }
 }
 
+
 //Keyup Event
 function keyUp(e) {
   if (e.key == 'ArrowRight' ||
@@ -133,8 +134,6 @@ function keyUp(e) {
     paddle.dx = 0
   }
 }
-
-
 
 //Keyboard event handlers
 document.addEventListener('keydown', keyDown)
